@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harshith Kotla | Frontend Developer Intern</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header class="header fade-in">
+  <div class="container hero-grid">
+
+    <div class="hero-image">
+      <img src="pic.jpg" alt="Harshith Kotla" class="profile-pic">
+    </div>
+
+    <div class="hero-content">
+      <h1>Harshith Kotla</h1>
+      <p class="subtitle">Frontend Developer Intern</p>
+      <p class="tagline">
+        Computer Science student skilled in HTML, CSS, and JavaScript, focused on building
+        responsive and user-friendly web interfaces.
+      </p>
+      <div class="buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="resume.pdf" download class="btn">Download Resume</a>
+        <a href="https://github.com/Harshithkotla" class="btn" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section class="section fade-in">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I am a Computer Science student with a strong interest in frontend web development.
+      I enjoy creating clean, responsive, and interactive user interfaces using HTML, CSS,
+      and JavaScript. I am actively seeking a frontend internship where I can apply my skills,
+      learn from experienced developers, and contribute to real-world projects.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section gray fade-in">
+  <div class="container">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+      <div>
+        <h3>Frontend</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3 (Flexbox, Responsive Design)</li>
+          <li>JavaScript (DOM, Events)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Tools</h3>
+        <ul>
+          <li>Git & GitHub</li>
+          <li>VS Code</li>
+          <li>XAMPP</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Other</h3>
+        <ul>
+          <li>Basics of Java & Python</li>
+          <li>MySQL</li>
+          <li>OOP Concepts</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section fade-in" id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="project-card glass">
+      <h3>Personal Portfolio Website</h3>
+      <p class="tech">HTML • CSS • JavaScript • Netlify</p>
+      <p>
+        A modern dark-themed personal portfolio showcasing my skills, projects,
+        and resume with smooth animations and responsive design.
+      </p>
+      <ul>
+        <li>Dark theme with glassmorphism UI</li>
+        <li>Smooth scroll & fade-in animations</li>
+        <li>Responsive for all devices</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>Sloka Viewer</h3>
+      <p class="tech">HTML • CSS • JavaScript</p>
+      <ul>
+        <li>Random slokas</li>
+        <li>Language toggle</li>
+        <li>Text-to-Speech</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <h3>Voice Assistant – HARSH</h3>
+      <p class="tech">HTML • CSS • JavaScript</p>
+      <ul>
+        <li>Voice input & output</li>
+        <li>Command handling</li>
+        <li>Bilingual support</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section fade-in" id="contact">
+  <div class="container contact-grid">
+
+    <div class="contact-visual">
+      <img src="connect.png" alt="Contact illustration">
+    </div>
+
+    <div class="contact-form">
+      <h2 class="contact-title">Let’s Connect</h2>
+
+      <form id="contactForm">
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label>Your Email</label>
+        <input type="email" id="email" placeholder="name@email.com" required>
+
+        <label>Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+        <button type="submit" class="btn primary full">Send</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Harshith Kotla | Frontend Developer Intern</p>
+</footer>
+
+<!-- SOCIAL BAR -->
+<div class="social-bar">
+  <a href="https://www.linkedin.com/in/harshith-kotla-6b82953a3" target="_blank">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://github.com/Harshithkotla" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="https://www.instagram.com/harshith_kotla_" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://wa.me/qr/24LDOURAR25XC1" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kotlaharshith0407@gmail.com"
+   target="_blank"
+   aria-label="Email">
+  <i class="fas fa-envelope"></i>
+</a>
+
+</div>
+
+<!-- EMAILJS SCRIPT -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".fade-in");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  elements.forEach(el => observer.observe(el));
+});
+
+(function () {
+  emailjs.init("66KdD2hc7Wq_RjHGH");
+})();
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.send(
+    "service_1fw23ii",
+    "template_knfo7n3",
+    {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value
+    }
+  ).then(
+    () => {
+      alert("Message sent successfully ✅");
+      document.getElementById("contactForm").reset();
+    },
+    (error) => {
+      alert("Failed to send ❌");
+      console.log(error);
+    }
+  );
+});
+</script>
+
+</body>
+</html>
+ 
