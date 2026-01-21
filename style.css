@@ -384,15 +384,16 @@ footer {
   }
 }
 .social-bar {
-  position: fixed;
-  right: 24px;
+  position: absolute;
+  left: -70px;        /* sits beside intro */
   top: 50%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   gap: 14px;
-  z-index: 999;
+  z-index: 5;
 }
+
 
 .social-bar a {
   width: 44px;
@@ -422,3 +423,4 @@ footer {
     display: none;
   }
 }
+
