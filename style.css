@@ -383,6 +383,7 @@ footer {
     display: none;
   }
 }
+/* SOCIAL BAR (FIXED ALWAYS) */
 .social-bar {
   position: fixed;
   right: 24px;
@@ -391,14 +392,14 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .social-bar a {
-  width: 44px;
-  height: 44px;
-  background: rgba(2, 6, 23, 0.8);
-  border: 1px solid rgba(96, 165, 250, 0.4);
+  width: 46px;
+  height: 46px;
+  background: rgba(2, 6, 23, 0.85);
+  border: 1px solid rgba(96, 165, 250, 0.45);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -406,19 +407,20 @@ footer {
   color: #93c5fd;
   font-size: 18px;
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
 }
 
 .social-bar a:hover {
   color: #ffffff;
-  transform: translateX(-6px) scale(1.08);
-  box-shadow: 0 0 15px rgba(96, 165, 250, 0.7);
-  background: rgba(59, 130, 246, 0.25);
+  transform: translateX(-6px) scale(1.1);
+  box-shadow: 0 0 18px rgba(96, 165, 250, 0.75);
+  background: rgba(59, 130, 246, 0.3);
 }
 
-/* Hide on small screens (optional but recommended) */
+/* Hide on mobile */
 @media (max-width: 768px) {
   .social-bar {
     display: none;
   }
 }
+
