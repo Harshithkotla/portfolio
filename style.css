@@ -387,7 +387,7 @@ footer {
   position: absolute;
   left: -70px;        /* sits beside intro */
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-45%);
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -423,4 +423,5 @@ footer {
     display: none;
   }
 }
+
 
