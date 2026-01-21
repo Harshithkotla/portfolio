@@ -25,6 +25,7 @@ body {
 .header {
   background: linear-gradient(135deg, #020617, #0f172a);
   padding: 110px 0 100px;
+  position: relative;
 }
 
 .hero-grid {
@@ -423,5 +424,6 @@ footer {
     display: none;
   }
 }
+
 
 
