@@ -25,7 +25,6 @@ body {
 .header {
   background: linear-gradient(135deg, #020617, #0f172a);
   padding: 110px 0 100px;
-  position: relative;
 }
 
 .hero-grid {
@@ -385,16 +384,15 @@ footer {
   }
 }
 .social-bar {
-  position: absolute;
-  left: -70px;        /* sits beside intro */
+  position: fixed;
+  right: 24px;
   top: 50%;
-  transform: translateY(-45%);
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   gap: 14px;
-  z-index: 5;
+  z-index: 999;
 }
-
 
 .social-bar a {
   width: 44px;
@@ -424,6 +422,3 @@ footer {
     display: none;
   }
 }
-
-
-
