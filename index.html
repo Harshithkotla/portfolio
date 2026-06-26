@@ -310,7 +310,8 @@ document
       }
     ).then(
       () => {
-        alert("Message sent successfully ✅");
+        successMessage.textContent = "Message sent successfully!";
+        successMessage.style.color = "#22c55e";
         document.getElementById("contactForm").reset();
       },
       (error) => {
