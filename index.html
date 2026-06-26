@@ -292,33 +292,33 @@
   });
 
   (function () {
-    emailjs.init("YOUR_PUBLIC_KEY"); // <-- Replace with your actual Public Key
-  })();
+  emailjs.init("66KdD2hc7Wq_RjHGH");
+})();
 
-  document
-    .getElementById("contactForm")
-    .addEventListener("submit", function (e) {
-      e.preventDefault();
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
 
-      emailjs.send(
-        "service_x1mb3be",
-        "66KdD2hc7Wq_RjHGH",
-        {
-          name: document.getElementById("name").value,
-          email: document.getElementById("email").value,
-          message: document.getElementById("message").value,
-        }
-      ).then(
-        () => {
-          alert("Message sent successfully ✅");
-          document.getElementById("contactForm").reset();
-        },
-        (error) => {
-          alert("Failed to send ❌");
-          console.log(error);
-        }
-      );
-    });
+    emailjs.send(
+      "service_x1mb3be",
+      "template_knfo7n3",
+      {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+      }
+    ).then(
+      () => {
+        alert("Message sent successfully ✅");
+        document.getElementById("contactForm").reset();
+      },
+      (error) => {
+        alert("Failed to send ❌");
+        console.log(error);
+      }
+    );
+  });
 </script>
 
 </body>
